@@ -1,6 +1,7 @@
-body {
 
-.horizontal_dt {
-  white-space: normal;
+
+.dl-horizontal dt{
+    white-space: normal;
 }
-}
+
+
