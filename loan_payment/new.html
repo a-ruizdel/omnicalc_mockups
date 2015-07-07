@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- Connect to our own custom CSS -->
-  <link rel="stylesheet" href="../custom_styles.css">
+  <link rel="stylesheet" type="text/css" href="custom_styles.css">
 
   <!-- Connect to jQuery (required before Bootstrap Javascript) -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -38,12 +38,42 @@
           Omnicalc
         </a>
       </div>
+
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav visible-xs visible-sm">
+    <li>
+        <a ref="/word count/new">
+          <i class="fa fa-book"></i>
+          <span>Word Count</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/loan payment/new">
+          <i class="fa fa-money"></i>
+          <span>Loan Payment</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/time between/new">
+          <i class = "fa fa-clock-o"></i>
+          <span>Time Between</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/descriptive statistics/new">
+          <i class="fa fa-bar-chart"></i>
+          <span>Descriptive Statistics</span>
+        </a>
+    </li>
+  </ul>
+  </div>
+  </div>
   </div>
 </nav>
 
 <div class="container">
   <div class="row">
-    <div class= "col-md-3">
+    <div class= "col-md-3 hidden-xs hidden-sm">
       <div class="list group">
         <a ref="word count" class="list-group-item">
           <i class="fa fa-book"></i>
@@ -57,7 +87,7 @@
           <i class = "fa fa-clock-o"></i>
           Time Between
         </a>
-        <a ref="descriptive statitstics" class="list-group-item">
+        <a ref="descriptive statistics" class="list-group-item">
           <i class="fa fa-bar-chart"></i>
           Descriptive Statistics
         </a>
