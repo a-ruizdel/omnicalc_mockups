@@ -25,106 +25,106 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="/">
           <i class="fa fa-calculator"></i>
           Omnicalc
         </a>
       </div>
 
- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  <ul class="nav navbar-nav visible-xs visible-sm">
-    <li>
-        <a ref="/word count/new">
-          <i class="fa fa-book"></i>
-          <span>Word Count</span>
-        </a>
-    </li>
-    <li>
-        <a ref="/loan payment/new">
-          <i class="fa fa-money"></i>
-          <span>Loan Payment</span>
-        </a>
-    </li>
-    <li>
-        <a ref="/time between/new">
-          <i class = "fa fa-clock-o"></i>
-          <span>Time Between</span>
-        </a>
-    </li>
-    <li>
-        <a ref="/descriptive statistics/new">
-          <i class="fa fa-bar-chart"></i>
-          <span>Descriptive Statistics</span>
-        </a>
-    </li>
-  </ul>
-  </div>
-  </div>
-</nav>
-
-<div class="container">
-  <div class="row">
-    <div class= "col-md-3 hidden-xs hidden-sm">
-      <div class="list group">
-        <a ref="word count" class="list-group-item">
-          <i class="fa fa-book"></i>
-          Word Count
-        </a>
-        <a ref="loan payment" class="list-group-item">
-          <i class="fa fa-money"></i>
-          Loan Payment
-        </a>
-        <a ref="time between" class="list-group-item">
-          <i class = "fa fa-clock-o"></i>
-          Time Between
-        </a>
-        <a ref="descriptive statitstics" class="list-group-item">
-          <i class="fa fa-bar-chart"></i>
-          Descriptive Statistics
-        </a>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav visible-xs visible-sm">
+          <li>
+            <a ref="omnicalc_mockups/word_count/new">
+              <i class="fa fa-book"></i>
+              <span>Word Count</span>
+            </a>
+          </li>
+          <li>
+            <a ref="omnicalc_mockups/loan_payment/new">
+              <i class="fa fa-money"></i>
+              <span>Loan Payment</span>
+            </a>
+          </li>
+          <li>
+            <a ref="/time_between/new">
+              <i class = "fa fa-clock-o"></i>
+              <span>Time Between</span>
+            </a>
+          </li>
+          <li>
+            <a ref="/descriptive_statistics/new">
+              <i class="fa fa-bar-chart"></i>
+              <span>Descriptive Statistics</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class= "col-md-9">
-      <div class="panel panel-default">
-        <div class ="panel-heading">
-          <h3 class="panel-title">New Word Count Calculation</h3>
-        </div>
-        <div class="panel-body">
-          <form action-"/word count/results" class="form-horizontal">
-        <div class="form-group">
-          <label for "user_text" class="col-sm-2 control-label">Text
-          </label>
-          <div class="col-sm-10">
-          <textarea name="user_text" class="form-control" rows="3" placeholder="Enter your text" id="user_text"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="user_word" class="col-sm-2 control-label">Special Word (optional)</label>
-          <div class="col-sm-10">
-          <input name="user_word" type="name" class="form-control" placeholder="Enter a word to count the occurrences of" id="user_word">
-          </div>
-        </div>
+  </nav>
 
-        <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  <div class="container">
+    <div class="row">
+      <div class= "col-md-3 hidden-xs hidden-sm">
+        <div class="list group">
+          <a ref="word_count" class="list-group-item">
+            <i class="fa fa-book"></i>
+            Word Count
+          </a>
+          <a ref="loan_payment" class="list-group-item">
+            <i class="fa fa-money"></i>
+            Loan Payment
+          </a>
+          <a ref="time_between" class="list-group-item">
+            <i class = "fa fa-clock-o"></i>
+            Time Between
+          </a>
+          <a ref="descriptive_statistics" class="list-group-item">
+            <i class="fa fa-bar-chart"></i>
+            Descriptive Statistics
+          </a>
         </div>
       </div>
-    </form>
+      <div class= "col-md-9">
+        <div class="panel panel-default">
+          <div class ="panel-heading">
+            <h3 class="panel-title">New Word Count Calculation</h3>
+          </div>
+          <div class="panel-body">
+            <form action-"/word_count/results" class="form-horizontal">
+              <div class="form-group">
+                <label for "user_text" class="col-sm-2 control-label">Text
+                </label>
+                <div class="col-sm-10">
+                  <textarea name="user_text" class="form-control" rows="3" placeholder="Enter your text" id="user_text"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="user_word" class="col-sm-2 control-label">Special Word (optional)</label>
+                <div class="col-sm-10">
+                  <input name="user_word" type="name" class="form-control" placeholder="Enter a word to count the occurrences of" id="user_word">
+                </div>
+              </div>
 
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
 </body>
 </html>
