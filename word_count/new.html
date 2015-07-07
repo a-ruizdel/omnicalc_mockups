@@ -23,6 +23,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -38,12 +39,41 @@
           Omnicalc
         </a>
       </div>
+
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav visible-xs visible-sm">
+    <li>
+        <a ref="/word count/new">
+          <i class="fa fa-book"></i>
+          <span>Word Count</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/loan payment/new">
+          <i class="fa fa-money"></i>
+          <span>Loan Payment</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/time between/new">
+          <i class = "fa fa-clock-o"></i>
+          <span>Time Between</span>
+        </a>
+    </li>
+    <li>
+        <a ref="/descriptive statistics/new">
+          <i class="fa fa-bar-chart"></i>
+          <span>Descriptive Statistics</span>
+        </a>
+    </li>
+  </ul>
+  </div>
   </div>
 </nav>
 
 <div class="container">
   <div class="row">
-    <div class= "col-md-3">
+    <div class= "col-md-3 hidden-xs hidden-sm">
       <div class="list group">
         <a ref="word count" class="list-group-item">
           <i class="fa fa-book"></i>
